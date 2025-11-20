@@ -18,7 +18,7 @@ python3 desktop\_cifar\_graph\_train.py --device cuda --amp auto --tf32 --epochs
 
 
 
-0.8986 accuracy with 1 head and 1 block :
+0.8986 accuracy with 1 head and 1 block, graph channels 128 :
 
 
 
@@ -26,11 +26,27 @@ python3 desktop\_cifar\_graph\_train.py --device cuda --amp auto --tf32 --epochs
 
 
 
+GATv2Conv
+
+
+
+0.9007 accuracy with 1 head and 1 block, graph channels 128 :
+
+
+
+python3 desktop\_cifar\_graph\_train.py --device cuda --amp auto --tf32 --epochs 200 --batch-size 128 --backbone cnn --embed-dim 128 --hidden 128 --heads 1 --num-blocks 1 --lr 0.001 --weight-decay 0.001 --warmup-epochs 5 --label-smoothing 0.1 --knn 0 --edge-drop 0 --mixup 0 --cutmix 0 --randaug --ra-n 2 --ra-m 9 --random-erasing 0.1 --ema 0 --tta --early-stop 0
+
+
+
+
+
+
+
 GCNConv
 
 
 
-0.8879
+0.8879 accuracy with 1 head and 1 block, graph channels 128 :
 
 
 
@@ -42,7 +58,7 @@ SAGEConv
 
 
 
-0.8980
+0.8980 accuracy with 1 head and 1 block, graph channels 128 :
 
 
 
@@ -52,7 +68,7 @@ python3 desktop\_cifar\_graph\_train.py --device cuda --amp auto --tf32 --epochs
 
 
 
-0.845
+0.845 accuracy with 1 head and 1 block, graph channels 16 :
 
 
 
@@ -62,7 +78,7 @@ python3 desktop\_cifar\_graph\_train.py --device cuda --amp auto --tf32 --epochs
 
 
 
-GATv2Conv
+
 
 
 
