@@ -52,3 +52,21 @@ python3 desktop\_cifar\_graph\_train.py --device cuda --amp auto --tf32 --epochs
 
 
 
+0.845
+
+
+
+python3 desktop\_cifar\_graph\_train.py --device cuda --amp auto --tf32 --epochs 200 --batch-size 128 --backbone cnn --embed-dim 128 --hidden 16 --heads 1 --num-blocks 1 --lr 0.001 --weight-decay 0.001 --warmup-epochs 5 --label-smoothing 0.1 --knn 0 --edge-drop 0 --mixup 0 --cutmix 0 --randaug --ra-n 2 --ra-m 9 --random-erasing 0.1 --ema 0 --tta --early-stop 0
+
+
+
+
+
+GATv2Conv
+
+
+
+
+
+
+
